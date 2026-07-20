@@ -38,7 +38,11 @@ function makeFoodCard(foods) {
 
     return card;
 }
-
+function showDetail(food, card) {
+    // innerHTML - actually renders the HTML tags
+    detailEl.innerHTML = `<h2>${food.name}</h2><img src ="${foods.image}"
+     alt ="${food.name}">`;
+}
 foods.forEach(function (food) {
     galleryEl.appendChild(makeFoodCard(food));
 });
