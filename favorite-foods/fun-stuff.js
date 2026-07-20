@@ -14,7 +14,10 @@ const foods = [
 const galleryEl = document.getElementById("gallery");
 const headerSubtitle = document.querySelector("header");
 
-function makeFoodCard (foods) {
+const detailEl = document.getElementById("detail")
+const description = document.getElementById("description")
+
+function makeFoodCard(foods) {
     const card = document.createElement("figure");
     card.className = "food-card";
 
@@ -29,9 +32,13 @@ function makeFoodCard (foods) {
     card.appendChild(img);
     card.appendChild(description);
 
+    card.addEventListener("click", function () {
+        showDetail(foods, card);
+    });
+
     return card;
 }
 
-foods.forEach(function(foods) {
+foods.forEach(function (foods) {
     galleryEl.appendChild(makeFoodCard(foods));
 });
