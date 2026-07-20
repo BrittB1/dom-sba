@@ -31,3 +31,7 @@ function makeFoodCard (foods) {
 
     return card;
 }
+
+foods.forEach(function(foods) {
+    galleryEl.appendChild(makeFoodCard(foods));
+});
