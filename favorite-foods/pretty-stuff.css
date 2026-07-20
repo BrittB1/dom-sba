@@ -5,6 +5,7 @@ background: hsl(32, 100%, 97%);
 color: grey;
 }
 
+/* rem - for accesibility; if a user resizes their screen, rem complies with their accesibility settings */
 header {
 text-align: center;
 padding: 2rem 1rem;
@@ -15,4 +16,11 @@ main {
 max-width: 900px;
 margin: 0 auto;
 padding: 1.5rem;
+}
+
+/* fr - fractional unit. used ONLY w/ CSS grid layout to divide space equally */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 1rem;
 }
