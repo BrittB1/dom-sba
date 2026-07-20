@@ -14,8 +14,8 @@ const foods = [
 const galleryEl = document.getElementById("gallery");
 const headerSubtitle = document.querySelector("header");
 
-const detailEl = document.getElementById("detail")
-const description = document.getElementById("description")
+const detailEl = document.getElementById("detail");
+const descriptionEl = document.getElementById("description");
 
 function makeFoodCard(foods) {
     const card = document.createElement("figure");
@@ -25,7 +25,7 @@ function makeFoodCard(foods) {
     img.src = foods.image;
     img.alt = foods.name;
 
-    const description = document.createElement("caption")
+    const caption = document.createElement("figcaption")
     description.textContent = foods.name;
 
     // 'put this inside of that.' nests image and caption inside card
@@ -39,6 +39,6 @@ function makeFoodCard(foods) {
     return card;
 }
 
-foods.forEach(function (foods) {
-    galleryEl.appendChild(makeFoodCard(foods));
+foods.forEach(function (food) {
+    galleryEl.appendChild(makeFoodCard(food));
 });
