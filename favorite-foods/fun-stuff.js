@@ -10,3 +10,11 @@ const foods = [
         description: "a curry dish prepared with goat meat, originating from the Indian subcontinent. The dish is a staple in Southeast Asian cuisine, Caribbean cuisine, and the cuisine of the Indian subcontinent."
     }
 ];
+
+const galleryEl = document.getElementById("gallery");
+const headerSubtitle = document.querySelector("header");
+
+function makeFoodCard (foods) {
+    const card = document.createElement("figure");
+    card.className = "food-card";
+}
