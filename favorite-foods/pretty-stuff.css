@@ -18,11 +18,11 @@ margin: 0 auto;
 padding: 1.5rem;
 }
 
-/* fr - fractional unit. used ONLY w/ CSS grid layout to divide space equally */
+
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-    gap: 1rem;
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
 }
 .foodcard {
     margin: 0;
@@ -30,4 +30,23 @@ padding: 1.5rem;
     overflow: hidden;
     background: white;
     cursor: pointer;
+}
+.foodcard:hover {
+    width: 200px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.foodcard img { 
+    display: block;
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.foodcard figcaption {
+    padding: 10px;
 }
