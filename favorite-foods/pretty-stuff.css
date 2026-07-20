@@ -24,14 +24,14 @@ display: flex;
 flex-wrap: wrap;
 gap: 16px;
 }
-.foodcard {
+.food-card {
     margin: 0;
     border-radius: 12px;
     overflow: hidden;
     background: white;
     cursor: pointer;
 }
-.foodcard:hover {
+.food-card:hover {
     width: 200px;
     margin: 0;
     border: 1px solid #ddd;
@@ -40,14 +40,14 @@ gap: 16px;
     cursor: pointer;
 }
 
-.foodcard img { 
+.food-card img { 
     display: block;
     width: 100px;
     height: 140px;
     object-fit: cover;
 }
 
-.foodcard figcaption {
+.food-card figcaption {
     padding: 10px;
     text-align: center;
     font-weight: bold;
