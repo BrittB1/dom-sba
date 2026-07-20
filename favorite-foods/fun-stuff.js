@@ -17,4 +17,17 @@ const headerSubtitle = document.querySelector("header");
 function makeFoodCard (foods) {
     const card = document.createElement("figure");
     card.className = "food-card";
+
+    const img = document.createElement("img");
+    img.src = foods.image;
+    img.alt = foods.name;
+
+    const description = document.createElement("caption")
+    description.textContent = foods.name;
+
+    // 'put this inside of that.' nests image and caption inside card
+    card.appendChild(img);
+    card.appendChild(description);
+
+    return card;
 }
