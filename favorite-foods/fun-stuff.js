@@ -26,11 +26,11 @@ function makeFoodCard(foods) {
     img.alt = foods.name;
 
     const caption = document.createElement("figcaption")
-    description.textContent = foods.name;
+    caption.textContent = foods.name;
 
     // 'put this inside of that.' nests image and caption inside card
     card.appendChild(img);
-    card.appendChild(description);
+    card.appendChild(caption);
 
     card.addEventListener("click", function () {
         showDetail(foods, card);
@@ -40,7 +40,7 @@ function makeFoodCard(foods) {
 }
 function showDetail(food, card) {
     // innerHTML - actually renders the HTML tags
-    detailEl.innerHTML = `<h2>${food.name}</h2><img src ="${foods.image}"
+    detailEl.innerHTML = `<h2>${food.name}</h2><img src ="${food.image}"
      alt ="${food.name}">`;
 
     descriptionEl.textContent = food.description;
