@@ -52,3 +52,16 @@ gap: 16px;
     text-align: center;
     font-weight: bold;
 }
+
+.food-card.selected {
+    border: 3px solid orange;
+}
+
+#detail {
+    margin-top: 20px;
+    text-align: center;
+}
+#detail img {
+    width: 300px;
+    border-radius: 10px;
+}
